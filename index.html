@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/diet.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de macronutrientes</title>
+</head>
+<body>
+    <div class="container-calculadora">
+        <h2>Calculadora de Macronutrientes</h2>
+        <label>Sexo:</label>
+        <select id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+        
+        <label>Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Digite seu peso">
+        
+        <label>Altura (cm):</label>
+        <input type="number" id="altura" placeholder="Digite sua altura">
+        
+        <label>Idade:</label>
+        <input type="number" id="idade" placeholder="Digite sua idade">
+        
+        <label>Nível de Atividade:</label>
+        <select id="atividade">
+            <option value="1.2">Sedentário</option>
+            <option value="1.375">Levemente Ativo</option>
+            <option value="1.55">Moderadamente Ativo</option>
+            <option value="1.725">Muito Ativo</option>
+            <option value="1.9">Extremamente Ativo</option>
+        </select>
+        
+        <label>Objetivo:</label>
+        <select id="objetivo">
+            <option value="0">Manutenção</option>
+            <option value="250">Ganho de Massa</option>
+            <option value="-250">Perda de Peso</option>
+        </select>
+        
+        <button onclick="calcularMacros()">Calcular</button>
+        <div class="result" id="resultado"></div>
+    </div>
+    <div class="macro">
+        <div class="texto">
+            <h2>Carboidratos:</h2>
+            <p>São a principal fonte de energia, convertidos em glicose para alimentar células e músculos. Estão presentes em pães, arroz, massas e frutas, fornecendo 4 calorias por grama.</p>
+        </div>
+        <div class="imagem">
+            <img src="assets/img.carbo.jpg" alt="">
+        </div>
+    </div>
+    <div class="macro">
+        <div class="texto">
+            <h2>Proteínas:</h2>
+            <p>Essenciais para a construção e reparação dos tecidos, além da produção de hormônios e enzimas. Encontradas em carnes, ovos, leite e leguminosas, também fornecem 4 calorias por grama.</p>
+        </div>
+        <div class="imagem"><img src="assets/img.proteina.jpg" alt=""></div>
+    </div>
+    <div class="macro">
+        <div class="texto">
+            <h2>Gorduras:</h2>
+            <p>Fonte de energia duradoura, auxiliam na absorção de vitaminas e proteção dos órgãos. Podem ser saudáveis, como as do azeite e peixes, ou prejudiciais, como as gorduras trans. Cada grama fornece 9 calorias.</p>
+        </div>
+        <div class="imagem">
+            <img src="assets/img.gorduras.jpeg" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
