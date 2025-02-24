@@ -17,8 +17,8 @@
     } else {
         tmb = 447.6 + (9.2 * peso) + (3.1 * altura) - (4.3 * idade);
     }
-    
-    let imc = peso/(altura*altura)
+    let alturaMetros = altura / 100;
+    let imc = peso / (alturaMetros * alturaMetros);
     let tdee = (tmb * fatorAtividade) + ajusteCalorico;
     let carboidratos = (tdee * 0.4) / 4;
     let proteinas = (tdee * 0.3) / 4;
