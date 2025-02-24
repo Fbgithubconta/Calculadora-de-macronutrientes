@@ -1,4 +1,4 @@
-function calcularMacros() {
+ function calcularMacros() {
     let sexo = document.getElementById('sexo').value;
     let peso = parseFloat(document.getElementById('peso').value);
     let altura = parseFloat(document.getElementById('altura').value);
@@ -18,6 +18,7 @@ function calcularMacros() {
         tmb = 447.6 + (9.2 * peso) + (3.1 * altura) - (4.3 * idade);
     }
     
+    let imc = peso/(altura*altura)
     let tdee = (tmb * fatorAtividade) + ajusteCalorico;
     let carboidratos = (tdee * 0.4) / 4;
     let proteinas = (tdee * 0.3) / 4;
@@ -28,6 +29,7 @@ function calcularMacros() {
         <p>Carboidratos: ${carboidratos.toFixed(1)}g</p>
         <p>Proteínas: ${proteinas.toFixed(1)}g</p>
         <p>Gorduras: ${gorduras.toFixed(1)}g</p>
+        <p>Seu imc:${imc.toFixed(2)}</p>
         <p>Água:${agua} litros</p>
     `;
 }
