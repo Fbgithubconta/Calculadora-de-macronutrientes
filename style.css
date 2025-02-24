@@ -29,6 +29,17 @@ img{
 input,select, button{
     padding: 8px;
 }
+.tabela{
+    width: 50vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+    text-align: center;
+}
 .container-calculadora{
     margin-top: 50px;
     background-color: white;
@@ -62,6 +73,7 @@ input,select, button{
     .texto{
     margin-left: 50px;
     }
+    
 }
 @media(max-width: 500px){
     .container-calculadora{
@@ -71,6 +83,9 @@ input,select, button{
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+    .tabela{
+        width: 80vw;
     }
     .macro{
         width: 80vw;
